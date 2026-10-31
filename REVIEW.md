@@ -4,7 +4,7 @@
 
 - 中文：**一键改色**
 - 英文：**One-Click Color for Mac PowerPoint**
-- GitHub 仓库名：`mac-powerpoint-batch-color`
+- GitHub 仓库名：`mac-ppt-batch-color-replace`
 - 版本：**0.1.2**
 
 ## 已备齐
@@ -24,6 +24,6 @@
 
 ## 维护者确认与发布
 
-维护者已于 2026-10-13 确认名称、许可证、用户说明、截图及测试版范围，并授权发布到 GitHub。公开仓库：[https://github.com/WenkoLee/mac-powerpoint-batch-color](https://github.com/WenkoLee/mac-powerpoint-batch-color)；插件下载入口见项目首页。后续修改仍需更新版本、重新构建，并按影响范围验收。
+维护者已于 2026-10-13 确认名称、许可证、用户说明、截图及测试版范围，并授权发布到 GitHub。公开仓库：[https://github.com/WenkoLee/mac-ppt-batch-color-replace](https://github.com/WenkoLee/mac-ppt-batch-color-replace)；插件下载入口见项目首页。后续修改仍需更新版本、重新构建，并按影响范围验收。
 
 维护者于 2026-10-14 要求统一更名“一键改色”，取消名称中的测试版标记，并要求后续修改同步本机与 GitHub。

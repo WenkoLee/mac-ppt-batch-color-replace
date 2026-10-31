@@ -50,7 +50,7 @@ Mac 程序化多页选择在普通视图与幻灯片浏览视图行为不同。�
 ## 保留的边界
 
 - 实体 Command 快捷键、部分文本选择、文本撤销/重做未单独验证；不以工具模拟结果代替实体键盘结论。
-- 格式化剪贴板专项测试来自首版，相关实现未改变，详见 [首版记录](https://github.com/WenkoLee/mac-powerpoint-batch-color/blob/v0.1.0-beta.1/docs/acceptance/ACCEPTANCE.md)。
+- 格式化剪贴板专项测试来自首版，相关实现未改变，详见 [首版记录](https://github.com/WenkoLee/mac-ppt-batch-color-replace/blob/v0.1.0-beta.1/docs/acceptance/ACCEPTANCE.md)。
 - Mac 图表主题读取返回 0；按主题旧色匹配时有 RGB 回退限制。数据点自动继承、主题关联等不保证完整格式回退。
 - Intel Mac、其他 Office/macOS 组合、组织宏策略及特殊图表/SmartArt/图片等未扩展验收。
 

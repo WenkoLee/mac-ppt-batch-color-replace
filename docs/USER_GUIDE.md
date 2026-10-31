@@ -89,7 +89,7 @@ Mac 图表接口不能可靠读回主题色位；图表按主题旧色匹配时�
 
 `112233` 是合法色号。输入未完成时保留最近有效预览；点击替换会再次校验，无效输入不会执行改色。
 
-格式化剪贴板专项测试及截图保留于 [首版验收](https://github.com/WenkoLee/mac-powerpoint-batch-color/blob/v0.1.0-beta.1/docs/acceptance/ACCEPTANCE.md)。
+格式化剪贴板专项测试及截图保留于 [首版验收](https://github.com/WenkoLee/mac-ppt-batch-color-replace/blob/v0.1.0-beta.1/docs/acceptance/ACCEPTANCE.md)。
 
 ## 处理边界
 

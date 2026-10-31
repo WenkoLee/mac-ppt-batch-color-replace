@@ -10,8 +10,8 @@
 
 ## 下载插件
 
-- **[下载 Mac 安装包](https://github.com/WenkoLee/mac-powerpoint-batch-color/releases/download/v0.1.2/OneClickColor_MacPowerPoint_0_1_2_Mac.zip)**：普通用户推荐，包含插件、中文说明和自制示例。
-- [发布页](https://github.com/WenkoLee/mac-powerpoint-batch-color/releases/tag/v0.1.2)：独立 PPAM、完整源码包与 SHA256 校验文件。
+- **[下载 Mac 安装包](https://github.com/WenkoLee/mac-ppt-batch-color-replace/releases/download/v0.1.2/OneClickColor_MacPowerPoint_0_1_2_Mac.zip)**：普通用户推荐，包含插件、中文说明和自制示例。
+- [发布页](https://github.com/WenkoLee/mac-ppt-batch-color-replace/releases/tag/v0.1.2)：独立 PPAM、完整源码包与 SHA256 校验文件。
 - [安装说明](docs/INSTALL.md) · [用户指南](docs/USER_GUIDE.md) · [验收记录](docs/acceptance/ACCEPTANCE.md)
 
 ## 为什么开发这个插件

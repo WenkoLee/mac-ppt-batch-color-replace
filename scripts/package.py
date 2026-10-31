@@ -32,7 +32,7 @@ def main():
     # GitHub normalizes non-ASCII asset names; use an ASCII download alias.
     shutil.copyfile(plugin, target / (stem + '.ppam'))
     files = public_files()
-    archive(target / (stem + '_Source.zip'), files, 'mac-powerpoint-batch-color')
+    archive(target / (stem + '_Source.zip'), files, 'mac-ppt-batch-color-replace')
     user_files = [p for p in files if p.relative_to(ROOT).parts[0] in {'release', 'examples', 'licenses'}
                   or p.name in {'LICENSE', 'THIRD_PARTY_NOTICES.md'}
                   or p.relative_to(ROOT).as_posix().startswith(('docs/images/', 'docs/acceptance/'))

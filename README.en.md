@@ -8,7 +8,7 @@ This project started with a practical need: update recurring colors in shapes, t
 
 ## Download
 
-[Mac installation bundle](https://github.com/WenkoLee/mac-powerpoint-batch-color/releases/download/v0.1.2/OneClickColor_MacPowerPoint_0_1_2_Mac.zip) · [Release and checksums](https://github.com/WenkoLee/mac-powerpoint-batch-color/releases/tag/v0.1.2)
+[Mac installation bundle](https://github.com/WenkoLee/mac-ppt-batch-color-replace/releases/download/v0.1.2/OneClickColor_MacPowerPoint_0_1_2_Mac.zip) · [Release and checksums](https://github.com/WenkoLee/mac-ppt-batch-color-replace/releases/tag/v0.1.2)
 
 ## Features
 

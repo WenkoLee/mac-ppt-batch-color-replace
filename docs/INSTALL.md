@@ -2,7 +2,7 @@
 
 当前版本为 **0.1.2**，安装文件未经过数字签名。
 
-从 [GitHub发布页](https://github.com/WenkoLee/mac-powerpoint-batch-color/releases/tag/v0.1.2) 下载以 `_Mac.zip` 结尾的安装包并解压。普通用户不需要构建源码。
+从 [GitHub发布页](https://github.com/WenkoLee/mac-ppt-batch-color-replace/releases/tag/v0.1.2) 下载以 `_Mac.zip` 结尾的安装包并解压。普通用户不需要构建源码。
 
 ## 安装前
 
