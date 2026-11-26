@@ -1,0 +1,28 @@
+{
+  "version": "0.1.3",
+  "date": "2026-11-26",
+  "package": "一键改色_0_1_3.ppam",
+  "sha256": "9111499f50152e651c3ea2e5450e25264552f778b763df1d8dfdfe846c78d0fb",
+  "environment": {
+    "macOS": "27.2.1 (26B131)",
+    "PowerPoint": "16.115.2 (16.115.26112215)",
+    "architecture": "arm64"
+  },
+  "test_deck": "self-created InteractiveFixture.pptx",
+  "control_count": 95,
+  "checks": {
+    "palette_buttons_removed": true,
+    "source_input_theme_a1": true,
+    "target_input_theme_a2": true,
+    "target_selection_keeps_source_a1": true,
+    "palette_hint_tracks_active_input": true,
+    "default_all_slides": true,
+    "direct_replace_without_scan_reported_count": 10,
+    "plugin_undo_reported_count": 10,
+    "new_addin_enabled": true,
+    "old_registration_removed": true,
+    "test_deck_closed_without_saving": true
+  },
+  "macro_protection_restored": "pending user confirmation",
+  "historical_functional_tests": "99 assertions from 0.1.0-beta.2 retained; not rerun for this UI-only change"
+}

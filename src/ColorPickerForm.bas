@@ -1,5 +1,5 @@
 ' SPDX-License-Identifier: MIT
-' One-Click Color for Mac PowerPoint — 0.1.2
+' One-Click Color for Mac PowerPoint — 0.1.3
 Option Explicit
 
 #If Mac Then
@@ -255,11 +255,7 @@ Private Sub BuildPanel()
     SetCaption StandardColor1, ChrW$(39044) & ChrW$(35272)
     StandardColor1.TextAlign = 2
 
-    Place ThemeHint, 354, 126, 56, 17
-    SetCaption ThemeHint, "主题色"
-    Place PaletteOld, 412, 122, 104, 24
-    Place PaletteTarget, 522, 122, 126, 24
-    mPaletteMode = "TARGET"
+    Place ThemeHint, 354, 126, 294, 17
     SetPaletteMode "TARGET"
     ThemeHint.Font.Size = 10.5
     ThemeHint.ForeColor = RGB(105, 113, 124)
@@ -377,7 +373,7 @@ End Sub
 
 Private Sub SyncLabels()
     Dim name As Variant
-    For Each name In Split("PaletteOld,PaletteTarget,PickFill,PickLine,PickText,RadiusHint,CandidatesHint,TargetTitle,TargetHint,ThemeHint,ScopeTitle,ScopeAll,ScopeSelected,ScopeCustom,RangeHint,ColorLabel,ThemeColor11,ThemeColor12,StandardColor1,CommandButtonEsc,OKButton,CancelButton,ThemeColor1,ThemeColor2,ThemeColor3,ThemeColor4,ThemeColor5,ThemeColor6,ThemeColor7,ThemeColor8,ThemeColor9,ThemeColor10,StandardColor2,StandardColor3,StandardColor4,StandardColor5,StandardColor6,StandardColor7,StandardColor8,StandardColor9,StandardColor10,StandardColor11,StandardColor12", ",")
+    For Each name In Split("PickFill,PickLine,PickText,RadiusHint,CandidatesHint,TargetTitle,TargetHint,ThemeHint,ScopeTitle,ScopeAll,ScopeSelected,ScopeCustom,RangeHint,ColorLabel,ThemeColor11,ThemeColor12,StandardColor1,CommandButtonEsc,OKButton,CancelButton,ThemeColor1,ThemeColor2,ThemeColor3,ThemeColor4,ThemeColor5,ThemeColor6,ThemeColor7,ThemeColor8,ThemeColor9,ThemeColor10,StandardColor2,StandardColor3,StandardColor4,StandardColor5,StandardColor6,StandardColor7,StandardColor8,StandardColor9,StandardColor10,StandardColor11,StandardColor12", ",")
         SyncLabel Me.Controls(CStr(name))
     Next name
 End Sub
@@ -490,38 +486,12 @@ ChangeFinished:
 End Sub
 
 Private Sub SetPaletteMode(ByVal mode As String)
-    Dim item As Object, controlName As Variant
     mPaletteMode = mode
-    SetCaption PaletteOld, "选择旧色"
-    SetCaption PaletteTarget, "选择目标色"
-    For Each controlName In Array("PaletteOld", "PaletteTarget")
-        Set item = Me.Controls(CStr(controlName))
-        item.TextAlign = 2
-        item.BorderStyle = 1
-        item.BorderColor = RGB(214, 228, 247)
-        item.BackColor = RGB(246, 247, 250)
-        item.ForeColor = RGB(105, 113, 124)
-    Next controlName
-    If mode = "OLD" Then Set item = PaletteOld Else Set item = PaletteTarget
-    item.BackColor = RGB(232, 241, 255)
-    item.ForeColor = RGB(0, 102, 204)
-    SyncLabels
-End Sub
-
-Private Sub PaletteOld_Click()
-    SetPaletteMode "OLD"
-End Sub
-
-Private Sub PaletteTarget_Click()
-    SetPaletteMode "TARGET"
-End Sub
-
-Private Sub PaletteOldText_Click()
-    PaletteOld_Click
-End Sub
-
-Private Sub PaletteTargetText_Click()
-    PaletteTarget_Click
+    If mode = "OLD" Then
+        SetCaption ThemeHint, "主题色 · 用于旧颜色"
+    Else
+        SetCaption ThemeHint, "主题色 · 用于目标颜色"
+    End If
 End Sub
 
 Private Sub HexBox_Enter()
@@ -529,6 +499,14 @@ Private Sub HexBox_Enter()
 End Sub
 
 Private Sub LongBox_Enter()
+    If mReady Then SetPaletteMode "TARGET"
+End Sub
+
+Private Sub HexBox_MouseDown(ByVal Button As Integer, ByVal Shift As Integer, ByVal X As Single, ByVal Y As Single)
+    If mReady Then SetPaletteMode "OLD"
+End Sub
+
+Private Sub LongBox_MouseDown(ByVal Button As Integer, ByVal Shift As Integer, ByVal X As Single, ByVal Y As Single)
     If mReady Then SetPaletteMode "TARGET"
 End Sub
 

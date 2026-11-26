@@ -1,13 +1,13 @@
 # 兼容性与限制
 
-当前为 **0.1.2**。发布范围限定为 Mac 桌面版 PowerPoint；以下区分实际验证和未验证项。
+当前为 **0.1.3**。发布范围限定为 Mac 桌面版 PowerPoint；以下区分实际验证和未验证项。
 
 ## 本次验收环境
 
 | 项目 | 环境 |
 | --- | --- |
-| macOS | 27.0.1，build 26A434 |
-| PowerPoint | 16.113.4，build 16.113.26100421 |
+| macOS | 27.2.1，build 26B131 |
+| PowerPoint | 16.115.2，build 16.115.26112215 |
 | 芯片架构 | arm64 / Apple Silicon |
 | 构建依赖 | Python 3.10+，pyOpenVBA 6.1.2 授权快照 |
 
